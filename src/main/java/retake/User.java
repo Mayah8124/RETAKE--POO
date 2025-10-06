@@ -1,3 +1,5 @@
+package retake;
+
 public class User {
     private String ID;
     private String Name;
@@ -9,6 +11,9 @@ public class User {
         this.Name = name;
         this.lastName = lastName;
         this.email = email;
+    }
+
+    public User(String id) {
     }
 
     public String getEmail() {
