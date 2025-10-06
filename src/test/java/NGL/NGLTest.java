@@ -52,7 +52,7 @@ public class NGLTest {
 
     @Test
     public void addMessageTest(){
-        List<Message> messageList = pub.messageList;
+        List<Message> messageList = pub.addMessage(mess1);
         assertEquals(messageList.getFirst().getMessage(), 2);
     }
 

@@ -6,7 +6,6 @@ import java.util.stream.Collectors;
 public class Publication {
     private String Id;
     private User link;
-    private Message messages;
     public List<Message> messageList;
 
     public Publication(String id , User link, List<Message> messageList) {
@@ -27,8 +26,8 @@ public class Publication {
         return Id + " " + link ;
     }
 
-    public List<Message> addMessage(Message message) {
-        messageList.add(message);
+    public List<Message> addMessage(Message messages) {
+        messageList.add(messages);
         return messageList;
     }
 
